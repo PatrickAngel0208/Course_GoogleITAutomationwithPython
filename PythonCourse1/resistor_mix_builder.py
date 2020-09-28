@@ -30,7 +30,7 @@ def check_resistor_value(resistor_value):
             if res_dict["value"] == resistor_value: #check if the asked value is in the data base
                 resistor_value_status = True
                 resistor_value_quantity = res_dict["quantity"]
-    
+        file.close()
     return resistor_value_status, resistor_value_quantity
 
 def make_mix_resistors(resistor_value):
@@ -50,6 +50,7 @@ def make_mix_resistors(resistor_value):
             else:
                 split_list = re.split("M$",dict_row["value"])
                 database_list.append(int(split_list[0])*1000000)
+        file.close()
         print(database_list)
 
         

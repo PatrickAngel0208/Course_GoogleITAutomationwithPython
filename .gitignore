@@ -4,3 +4,5 @@ tests.py
 resistor_mix_builder-NOTES.txt
 resistors_database.csv
 .~lock.resistors_database.csv#
+user_emails.csv
+updated_user_emails.csv
